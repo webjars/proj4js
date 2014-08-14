@@ -20,14 +20,14 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>2.2.1</upstream.version>
-        <upstream.url>http://cdnjs.cloudflare.com/ajax/libs/proj4js/2.2.1/proj4.js</upstream.url>
+        <upstream.url>http://cdnjs.cloudflare.com/ajax/libs/proj4js/${upstream.version}/proj4.js</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
         <workDir>${project.build.directory}/${project.artifactId}</workDir>
         <requirejs>
             {
-            "paths": {
-            "proj4js": "proj4js"
-            }
+                "paths": {
+                    "proj4js": "proj4js"
+                }
             }
         </requirejs>
     </properties>
