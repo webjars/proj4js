@@ -67,14 +67,14 @@
                         </goals>
                         <configuration>
                             <target>
-                                <echo message="downloading sources" />
-                                <mkdir dir="${workDir}" />
-                                <get src="${upstream.url}" dest="${workDir}" />
-                                <echo message="moving resources" />
+                                <echo message="downloading sources"/>
+                                <mkdir dir="${workDir}"/>
+                                <get src="${upstream.url}" dest="${workDir}"/>
+                                <echo message="moving resources"/>
                                 <move todir="${destDir}">
-                                    <fileset dir="${workDir}" />
+                                    <fileset dir="${workDir}"/>
                                 </move>
-                                <delete dir="${destDir}/META-INF" />
+                                <delete dir="${destDir}/META-INF"/>
                             </target>
                         </configuration>
                     </execution>
@@ -84,13 +84,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5.1</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.5</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
