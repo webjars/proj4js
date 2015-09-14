@@ -25,7 +25,7 @@
         <requirejs>
             {
                 "paths": {
-                    "proj4js": "proj4js"
+                    "proj4js": "proj4"
                 }
             }
         </requirejs>
